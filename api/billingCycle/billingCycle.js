@@ -1,7 +1,7 @@
 const restful = require('node-restful')
 const mongoose = restful.mongoose
 
-const creditSchema = new mongooose.Schema({
+const creditSchema = new mongoose.Schema({
     name:{ type: String, require: true },
     value: { type: Number, min: 0, require: true }
 });

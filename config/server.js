@@ -11,13 +11,4 @@ server.listen(port, function(){
     console.log(`BACKEND está funcionando na porta ${port}.`)
 });
 
-
-server.use(function(req,rest,next){
-    console.log("meu middleware 1");
-    next()
-});
-
-server.use(function(req,rest,next){
-    console.log("meu middleware 2");
-    rest.send("Funcionou novamente!!!");  
-});
+module.exports = server
