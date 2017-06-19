@@ -31,6 +31,7 @@ BillingCycle.route('count',function(req, res, next){
             res.json({value});
         }
     });    
-});
+}); 
+
 
 module.exports = BillingCycle;
